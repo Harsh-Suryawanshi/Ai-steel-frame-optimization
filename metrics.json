@@ -1,0 +1,232 @@
+{
+  "beams": {
+    "beam_zp_metrics": {
+      "Baseline_Ridge": {
+        "test_r2": 0.8668,
+        "test_rmse": 273.8626,
+        "test_mae": 211.4652,
+        "test_mape_percent": 28.82,
+        "cv_r2_mean": 0.8726,
+        "cv_r2_std": 0.0041
+      },
+      "Random_Forest": {
+        "test_r2": 0.9971,
+        "test_rmse": 40.6443,
+        "test_mae": 17.5269,
+        "test_mape_percent": 1.57,
+        "cv_r2_mean": 0.9963,
+        "cv_r2_std": 0.0007
+      },
+      "Gradient_Boosting": {
+        "test_r2": 0.9978,
+        "test_rmse": 35.4866,
+        "test_mae": 21.2285,
+        "test_mape_percent": 2.04,
+        "cv_r2_mean": 0.9974,
+        "cv_r2_std": 0.0004
+      },
+      "MLP_NeuralNet": {
+        "test_r2": 0.9983,
+        "test_rmse": 30.985,
+        "test_mae": 19.8853,
+        "test_mape_percent": 2.18,
+        "cv_r2_mean": 0.9954,
+        "cv_r2_std": 0.0021
+      },
+      "best_model_selected": "MLP_NeuralNet",
+      "top_feature_importances": [
+        {
+          "feature": "beam_location_Primary_Interior",
+          "importance": 0.3831
+        },
+        {
+          "feature": "span",
+          "importance": 0.2275
+        },
+        {
+          "feature": "bay_x_length",
+          "importance": 0.1418
+        },
+        {
+          "feature": "bay_y_length",
+          "importance": 0.0953
+        },
+        {
+          "feature": "beam_location_Secondary",
+          "importance": 0.0534
+        },
+        {
+          "feature": "live_load",
+          "importance": 0.024
+        },
+        {
+          "feature": "dead_load",
+          "importance": 0.0135
+        },
+        {
+          "feature": "beam_location_Primary_Exterior",
+          "importance": 0.0126
+        },
+        {
+          "feature": "story_num",
+          "importance": 0.0124
+        },
+        {
+          "feature": "zone_z",
+          "importance": 0.0101
+        }
+      ]
+    },
+    "beam_weight_metrics": {
+      "Baseline_Ridge": {
+        "test_r2": 0.9077,
+        "test_rmse": 7.5766,
+        "test_mae": 5.8444,
+        "test_mape_percent": 10.29,
+        "cv_r2_mean": 0.9111,
+        "cv_r2_std": 0.0034
+      },
+      "Random_Forest": {
+        "test_r2": 0.9922,
+        "test_rmse": 2.2067,
+        "test_mae": 0.9258,
+        "test_mape_percent": 1.41,
+        "cv_r2_mean": 0.9893,
+        "cv_r2_std": 0.001
+      },
+      "Gradient_Boosting": {
+        "test_r2": 0.9905,
+        "test_rmse": 2.4355,
+        "test_mae": 1.559,
+        "test_mape_percent": 2.42,
+        "cv_r2_mean": 0.9885,
+        "cv_r2_std": 0.0007
+      },
+      "MLP_NeuralNet": {
+        "test_r2": 0.9888,
+        "test_rmse": 2.6455,
+        "test_mae": 1.7237,
+        "test_mape_percent": 2.63,
+        "cv_r2_mean": 0.9838,
+        "cv_r2_std": 0.002
+      },
+      "best_model_selected": "Random_Forest"
+    }
+  },
+  "columns": {
+    "column_area_metrics": {
+      "Baseline_Ridge": {
+        "test_r2": 0.8414,
+        "test_rmse": 46.6635,
+        "test_mae": 32.4004,
+        "test_mape_percent": 45.97,
+        "cv_r2_mean": 0.8377,
+        "cv_r2_std": 0.0078
+      },
+      "Random_Forest": {
+        "test_r2": 0.9884,
+        "test_rmse": 12.6439,
+        "test_mae": 8.0442,
+        "test_mape_percent": 6.26,
+        "cv_r2_mean": 0.9845,
+        "cv_r2_std": 0.002
+      },
+      "Gradient_Boosting": {
+        "test_r2": 0.9976,
+        "test_rmse": 5.7616,
+        "test_mae": 3.8572,
+        "test_mape_percent": 3.87,
+        "cv_r2_mean": 0.9967,
+        "cv_r2_std": 0.0004
+      },
+      "MLP_NeuralNet": {
+        "test_r2": 0.9983,
+        "test_rmse": 4.7983,
+        "test_mae": 3.4678,
+        "test_mape_percent": 4.54,
+        "cv_r2_mean": 0.9979,
+        "cv_r2_std": 0.0003
+      },
+      "best_model_selected": "MLP_NeuralNet",
+      "top_feature_importances": [
+        {
+          "feature": "trib_area_m2",
+          "importance": 0.4975
+        },
+        {
+          "feature": "story_num",
+          "importance": 0.3762
+        },
+        {
+          "feature": "n_stories",
+          "importance": 0.0917
+        },
+        {
+          "feature": "dead_load",
+          "importance": 0.0109
+        },
+        {
+          "feature": "live_load",
+          "importance": 0.0101
+        },
+        {
+          "feature": "bay_y_length",
+          "importance": 0.0029
+        },
+        {
+          "feature": "bay_x_length",
+          "importance": 0.0022
+        },
+        {
+          "feature": "story_height",
+          "importance": 0.0018
+        },
+        {
+          "feature": "wind_speed",
+          "importance": 0.0016
+        },
+        {
+          "feature": "zone_z",
+          "importance": 0.0009
+        }
+      ]
+    },
+    "column_weight_metrics": {
+      "Baseline_Ridge": {
+        "test_r2": 0.8323,
+        "test_rmse": 38.6336,
+        "test_mae": 28.9273,
+        "test_mape_percent": 42.46,
+        "cv_r2_mean": 0.8263,
+        "cv_r2_std": 0.0079
+      },
+      "Random_Forest": {
+        "test_r2": 0.9649,
+        "test_rmse": 17.6813,
+        "test_mae": 10.2048,
+        "test_mape_percent": 8.22,
+        "cv_r2_mean": 0.9622,
+        "cv_r2_std": 0.0017
+      },
+      "Gradient_Boosting": {
+        "test_r2": 0.9742,
+        "test_rmse": 15.1599,
+        "test_mae": 9.316,
+        "test_mape_percent": 7.41,
+        "cv_r2_mean": 0.9719,
+        "cv_r2_std": 0.0021
+      },
+      "MLP_NeuralNet": {
+        "test_r2": 0.9775,
+        "test_rmse": 14.1655,
+        "test_mae": 9.1609,
+        "test_mape_percent": 7.63,
+        "cv_r2_mean": 0.9747,
+        "cv_r2_std": 0.0031
+      },
+      "best_model_selected": "MLP_NeuralNet"
+    }
+  },
+  "total_beam_samples": 7431,
+  "total_column_samples": 7431
+}
